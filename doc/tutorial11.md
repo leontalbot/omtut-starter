@@ -88,7 +88,7 @@ the code that needs to go into `core.clj` (replace the existing stuff):
   (GET "/" [] (resp/redirect "/index.html"))
 
   (GET "/comments" [] (json-response
-                       {:message "Here's the comments!"
+                       {:message "Here are the comments!"
                         :comments @comments}))
   (POST "/comments" req (save-comment! req))
 
